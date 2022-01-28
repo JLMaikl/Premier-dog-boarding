@@ -76,7 +76,9 @@ body {
     color: #fff;
     cursor: pointer;    
 }   
-
+.header_button {
+    padding-bottom: 321px;
+}
 .nav {
     max-width: 1020px;
     max-height: 128px;
@@ -362,16 +364,20 @@ body {
 }
 .block-line_two {
     display: flex; 
-    justify-content: space-between;   
+    justify-content: space-between;
+    margin-bottom: 0;   
 }
 .wrap-service_card {
     max-width: 324px;
     max-height: 340px;
     display: flex;
     background: #fff;
-    filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
     margin-bottom: 24px;
     border-radius: 25px;
+    cursor: pointer;
+}
+.wrap-service_card:hover {
+    filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
 }
 .wrap-service_card not(:last-child) {
     margin-right: 44px; 
@@ -403,6 +409,127 @@ body {
     color: #4B4B4B;
     margin: 0;
 }
+.service-button {
+    width: 124px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    background: #F2726F;
+    box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24);
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 66px; 
+    margin-bottom: 112px;   
+}
+.wrap-service_button {
+    width: 100%;
+    text-align: center;
+}
+.wrap-apointment {
+    margin: 0;
+    background: url(../image/apointment.png)no-repeat;
+    max-height: 989px;
+    background-size: 100% 100%;
+}
+.wrap-apointment {
+    position: relative;
+    display: flex;
+}
+.apointment-img {
+    position: absolute;
+    margin-bottom: 175px;
+}
+.apointment-content {
+    position: relative;    
+    display: flex;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 210px;
+    
+}
+.content_form {
+    width: 585px;
+    height: 640px;
+    background: #5D62B5;
+    border-radius: 25px;
+    text-align: center;    
+    padding-top: 76px;
+    
+}
+.content-form_title {
+    margin: 0;
+    margin-bottom: 48px;
+    font-weight: 900;
+    font-size: 36px;
+}
+.input {
+    width: 224px;
+    height: 48px;
+    border-radius: 10px;
+    border: #fff solid 1px;
+    background: #5D62B5;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    letter-spacing: 0.15px;
+    padding-left: 23px;
+    margin-right: 11.2px;
+    margin-left: 11.2px;
+    margin-bottom: 22px;
+}
+.textarea {
+    width: 470px;
+    height: 180px;
+    border-radius: 10px;
+    border: #fff solid 1px;
+    background: #5D62B5;
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    letter-spacing: 0.15px;
+    padding-left: 17px;
+    padding-top: 23px;
+    margin-bottom: 30px;
+}
+.button_form {
+    margin: 0;
+    margin-left: 260px;
+}
+.content_text {
+    margin-left: 111px;
+    width: 324px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-text_title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0; 
+    margin-bottom: 46px;   
+}
+.content-text_number {
+    margin: 0;
+    font-weight: 900;
+    font-size: 96px;
+    margin-bottom: 46px;
+}
+.content-text_customer {
+    margin: 0;
+    font-weight: 900;
+    font-size: 19px;
+}
+
 
 
 
