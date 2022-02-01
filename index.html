@@ -228,15 +228,20 @@
                 <div class="apointment-content">
                     <div class="content_form">
                         <h3 class="content-form_title">Make an appointment</h3>
-                        <form action="#" class="form">
-                            <input type="text" size="24" value="Name" class="input">
-                            <input type="email" size="24" value="Email" class="input"><br>
-                            <input type="tel" size="24" value="Phone Number" class="input">
-                            <input type="text" size="24" value="Select Service" class="input"><br>
-                            <textarea name="comment" cols="40" rows="3" class="textarea">Tell us about your puppers include his/her name</textarea>
+                        <form action="#" class="form" action="/apply/" method="POST">
+                            <input type="text" name="name" size="24" placeholder="Name" class="input" required autofocus>
+                            <input type="email" name="email" placeholder="Email" required class="input" required><br>
+                            <input type="tel" name="tel" placeholder="Phone Number" class="input" required title="Номер должен содержать 11 цифр и начинаться с 7  в формате 7(___)___-__-__" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                            <select name="select" id="select" class="input" >
+                                <option value="Select Service" selected>Select Service</option>
+                                <option value="service one">Service One</option>
+                                <option value="service two">Service Two</option>
+                                <option value="service three">Service Three</option>
+                            </select>
+                            <textarea name="comment" cols="40" rows="3" class="textarea" required>Tell us about your puppers include his/her name</textarea>
                             <div class="button_appointment">
                                 <button class="button button_form btn btn-white btn-animate">MAKE AN APPOINTMENT</button>
-                            </div>
+                            </div>                            
                         </form>
                     </div>
                     <div class="content_text">
@@ -259,17 +264,18 @@
                             <div class="gallery-info">
                                 <div class="gallery-info_items">
                                     <h3 class="gallery-info_item">Gallery</h3>
-                                    <h3 class="gallery-info_item info-item_bold info_cursor info-item_one">Live stream: Yard 1</h3>
-                                    <h3 class="gallery-info_item info_cursor info-item_two">Live stream: Yard 2</h3>
-                                    <h3 class="gallery-info_item info_cursor info-item_three">Live stream: Yard 3</h3>
+                                    <h3 class="gallery-info_item item-cicle_green info-item_bold info_cursor">Live stream: Yard 1</h3>
+                                    <h3 class="gallery-info_item item-cicle_green info_cursor">Live stream: Yard 2</h3>
+                                    <h3 class="gallery-info_item item-cicle_grey info_cursor">Live stream: Yard 3</h3>
                                 </div>
                                 <div class="gallery-info_line">
-                                    <div class="info-boldline_bottom info-boldline info-boldline_move">                            </div>
+                                    <div class="info-boldline_bottom info-boldline info-boldline_move">                          
+
+                                    </div>
                                 </div>
                                 <div class="gallery-info_photos">
+                                    <span class="info_live">Live</span>
                                     <img src="./image/img1.png" alt="photo" class="gallery-info_photo active ">
-                                    <img src="./image/img2.png" alt="photo" class="gallery-info_photo ">
-                                    <img src="./image/img3.png" alt="photo" class="gallery-info_photo">
                                 </div>
                             </div>  
                         </div>
@@ -440,5 +446,7 @@
 
       <script src="./js/script.js"></script>
       <script src="./js/gallery.js"></script>
+      <script src="./js/formvalidation.js"></script>
+      <script src="./js/scroll.js"></script>
 </body>
 </html>

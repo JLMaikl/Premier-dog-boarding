@@ -13,7 +13,5 @@ iconShop.addEventListener('click', () => {
     downlistShop.classList.toggle('menu-downlist_hidden')
 })
 
-// form.addEventListener('click', (event) => {
-//     event.preventDefault()
-// })
+
 
