@@ -12,8 +12,7 @@ html, body {
     color: #FFFFFF;
    
 }
-.header {
-    width: 100vw;
+.header {    
     min-height: 100vh;
     margin: 0;
     background: url(../image/bg_dog.png)no-repeat;
@@ -29,6 +28,10 @@ html, body {
     align-items: center;
     text-align: center;
 }
+.header-info_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 .header-info_text {
     display: block;
     font-size: 1.2rem;
@@ -41,10 +44,7 @@ html, body {
 }
 .wrap {
     max-width: 102rem;
-    margin: auto;    
-}
-.info-hours_left {
-    margin-left: 23.6rem;
+    margin: auto;     
 }
 .info-call_left {
     margin-left: 3rem;
@@ -91,6 +91,23 @@ html, body {
     margin: 0 auto; 
     margin-top: 2.8rem;
     border-radius: 1rem;
+    position: relative;
+}
+.nav-menu_burger {
+    display: none;
+}
+.nav-menu_burger-visible {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+    width: 15rem;
+    background: #fff;
+    border-radius: 1.5rem;
+    border: solid .2rem grey;
+}
+.burger-menu_list {
+    padding-left: 2rem;
 }
 .nav-menu_list {
     display: flex;
@@ -103,6 +120,51 @@ html, body {
     margin-right: 3.7rem;
     color: #000;
     line-height: 2em;
+}
+.burger-menu_item {
+    font-size: 1.4rem;
+    font-weight: 700;
+    list-style-type: none;
+    margin-right: 3.7rem;
+    color: #000;
+    line-height: 2em;
+    position: relative;
+}
+.burger-icon-servise {
+    cursor: pointer;
+}
+.burger-icon-shop {
+    cursor: pointer;
+}
+.burger-downlist_servise {
+    display: none;
+    position: absolute;
+    left: 3rem;
+    width: 12rem;
+    border: solid 0.2rem grey;
+    border-radius: 1.5rem;
+    padding-left: 2rem;
+    margin-left: 4rem;
+    background: #fff;
+}
+.burger-downlist_shop {
+    display: none;
+    position: absolute;
+    left: 3rem;
+    width: 12rem;
+    border: solid 0.2rem grey;
+    border-radius: 1.5rem;
+    padding-left: 2rem;
+    margin-left: 4rem;
+    background: #fff;
+}
+.burger-downlist_block {
+    display: block;
+}
+.burger-icon_expand {
+    position: absolute;
+    left: 6rem;
+    top: 0;
 }
 .nav-menu_item > a {
   color: #000;
@@ -174,7 +236,7 @@ html, body {
     background-color: #F5F5F5;
 }
 .container {
-    max-width: 100%;    
+    max-width: 100%;     
 }
 .wrap-info {
     max-width: 102rem;
@@ -190,6 +252,9 @@ html, body {
     align-items: center;    
     justify-content: center;
 }
+.info-who_phone {
+    position: relative;
+}
 .info-who_cicle{    
     display: inline-block;
     position: absolute;
@@ -199,6 +264,9 @@ html, body {
     max-width: 20.1rem;
     max-height: 31.7rem;
 }
+.info_cicle {
+    width: 100%;
+}
 .info-cicle {
     max-width: 100%;
 }
@@ -207,11 +275,13 @@ html, body {
     align-items: center;
 }
 .info-who_namepage {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 84.6rem;
-    margin-top: 28rem;
+    margin-top: 10rem;
+    margin-bottom: 35.4rem;
 }
 .info_name {
     margin: 0;
@@ -234,21 +304,23 @@ html, body {
     letter-spacing: 0.15px;
     color: #F5F5F5;
 }
-.info-who_blob {
-    position: relative;
-    top: -10rem;
-    left: -10%;
+.info_blob {
+    position: absolute;
+    top: 30rem;
+    left: -10rem;
+    width: 80%;
 }
 .info_dog {
-    max-width: 84.6rem;
-    max-height: 42rem;
-    border-radius: 4rem;
     position: absolute;
+    max-width: 84.6rem;
+    max-height: 36rem;
+    border-radius: 4rem;
     z-index: 100;
-    top: 39rem;
+    top: 45rem;
+    width: 100%;
 }
 .info-promise {
-    margin-top: 11rem;
+    margin-top: 8rem;
 }
 .promise-name_color {
     color: #5D62B5;
@@ -262,7 +334,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 12.2rem;
+    padding-bottom: 6rem;
 }
 .info-promise_block {
     display: flex;
@@ -300,6 +372,7 @@ html, body {
 .video-picture_blob {
     position: absolute;
     z-index: 15;
+    height: 100%;    
 }
 .video-picture_cicle {
     margin-top: 12rem;
@@ -325,6 +398,7 @@ html, body {
     font-size: 3.6rem;
     line-height: 117%;    
     padding-top: 11.2rem;
+    padding-right: 2rem;
     padding-bottom: 4.2rem;
     margin-bottom: 0;
 }
@@ -335,7 +409,7 @@ html, body {
     position: absolute;
     right: 1%;
     top: 0;
-    
+    width: 50%;
 }
 .video-picture_blob2 {
     position: absolute;
@@ -442,9 +516,13 @@ html, body {
     position: relative;
     display: flex;
 }
-.apointment-img {
+.apointment-img-cicle {
     position: absolute;
     margin-bottom: 17.5rem;
+    /* width: 89.3rem; */
+    height: 93.28rem;
+    width:60%;
+    left: 4rem;
 }
 .apointment-content {
     position: relative;    
@@ -558,6 +636,7 @@ html, body {
 .gallery-info_photos {
     margin-top: 5rem;
     position: relative;
+    max-width: 84.6rem;
 }
 .gallery-info_photo {
     border-radius: 2.5rem;
@@ -630,18 +709,18 @@ html, body {
 }
 .info-boldline_bottom {
     border-bottom: #fff solid .4rem;
-    width: 20rem;    
+    width: 24%;    
     position: absolute;
     top: -.25rem;
 }
 .info-boldline_move {
-    margin-left: 16rem;
+    margin-left: 18.9%;
 }
 .info-boldline_move1 {
-    margin-left: 40rem;
+    margin-left: 47.3%;
 }
 .info-boldline_move2 {
-    margin-left: 64.6rem;
+    margin-left: 76.4%;
 }
 .customers-block {
     margin-top: 12rem;
@@ -651,6 +730,8 @@ html, body {
 .blob-cus {
     position: absolute;
     left: 0;
+    width: 45%;
+    bottom: 3rem;
 }
 .info-page_cards {
     display: flex;
@@ -720,6 +801,7 @@ html, body {
 .img-stats_bulb {
     position: absolute;
     right: 11.7rem;
+    width: 50%;
 }
 .img-stats_dog {
     position: absolute;
@@ -774,6 +856,9 @@ html, body {
     padding: 4.3rem 7.6rem 4.6rem 7rem;
     background: #5D62B5;
     border-radius: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    flex-wrap: wrap;
 }
 .stats-block_text {
     font-weight: 900;
@@ -878,6 +963,8 @@ html, body {
     justify-content: space-around;
     padding-top: 2.3rem;
     padding-bottom: 1.8rem;
+    flex-wrap: wrap;
+    margin-right: 1rem;
 }
 .footer-info_privacy {
     display: flex;
@@ -980,6 +1067,29 @@ html, body {
 
 /* button   */
 
+/* button menu*/
+.menu { 
+    display: none; 
+}
+.menu_checkbox { 
+    display: none;
+}
+
+
+/* #menu {visibility: hidden;}  */
+/* hiding the checkbox */ 
+
+/* hamburger */
+label {width:5rem;height:.5rem;border-radius:5px;background:#000;cursor:pointer;-webkit-transition:0.6s;transition:0.6s;top:100%;left:50%;margin-left:2.4rem;margin-top:-.5px;}
+label:before{content:"";width:5rem;height:.5rem;background:#000;position:absolute;transform:translateY(-30px);-webkit-transform:translateY(-1rem);border-radius:5px;-webkit-transition:0.6s;transition:0.6s;}
+label:after{content:"";width:5rem;height:.5rem;background:#000;position:absolute;transform:translateY(30px);-webkit-transform:translateY(1rem);border-radius:5px;transition:0.6s;-webkit-transition:0.6s;}
+
+/* animation when checked */
+#menu:checked + label {width:0px;}
+#menu:checked + label:before {transform:rotate(45deg) translate(0px);-webkit-transform:rotate(45deg) translate(0px);}
+#menu:checked + label:after {transform:rotate(-45deg) translate(0px);-webkit-transform:rotate(-45deg) translate(0px);}
+
+/* button menu*/
 
 
 
@@ -991,26 +1101,258 @@ html, body {
 @media (max-width: 1200px) {
     html, body {
         font-size: 8px;  
-    }
+    }    
+       
   }
 
-@media (max-width: 1024px) {
-    
-  }
-
-@media (max-width: 992px) {
-    
+  @media (max-width: 960px) {
+    html, body {
+        font-size: 7px;  
+    }    
+    .info_cicle {
+        width: 80%;
+    }    
+     
   }
 
 @media (max-width: 768px) {
-    
+    html, body {
+        font-size: 6px;  
+    } 
+    .info_blob {
+        top: 33rem;
+    } 
+     
   }
 
-@media (max-width: 576px) {
-    
+@media (max-width: 670px) {
+    .header-info {
+        justify-content: center;
+    }
+     .wrap {
+         width: 80%;
+     }
+     .wrap-info {
+         width: 80%;
+     }
+     .info_page  {
+         padding-top: 7rem;
+     }
+     .info-who_phone {
+         width: 80%;         
+     }
+     .info-who_namepage {
+         margin-bottom: 45rem;
+     }
+     .info_blob {
+         top: 45rem;
+     }
+     .info_dog {
+         top: 60rem;
+     }
+     .info-promise_block {
+         flex-direction: column;
+    }
+    .promise-block {
+         max-width: 100%;
+     }
+     .wrap-service_cards {
+         flex-direction: row;
+     }
+     .wrap-service_card {
+         margin-right: 4.4rem;
+     }
+     .block-line_one {
+         flex-direction: column;
+     }
+     .block-line_two {
+         flex-direction: column;
+     }
+     .wrap-services_block {
+         max-width: 70rem;
+     }
+     .apointment-content {
+         width: 80%;
+     }
+     .textarea {
+         width: 80%;
+     }
+     .wrap-test_block {
+         width: 80%;
+     }
+     .gallery-block_in {
+         width: 80%;
+     }
+     .customers-block {
+        flex-direction: column;
+        align-items: center;
+     }
+     .wrap-stats_container {
+         width: 80%;
+     }
+     .stats-info {
+        padding-top: 16rem;
+    }
+    .stats-info_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .stats-info_info {
+        margin: 3rem;
+    }
+    .stats-block_text{
+        margin-bottom: 2rem;
+    }
+    .stats-block_in {
+        justify-content: center;
+    }
+    .footer-about {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-about_logo {
+        max-width: 50%;
+        text-align: center;
+    }
+    .footer_icons {
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    .footer-about_links {
+        margin-bottom: 4rem;
+    }
+    .info-boldline_move {
+        margin-left: 17%;
+    }
+    .info-boldline_move1 {
+        margin-left: 45%;
+    }
+    .info-boldline_move2 {
+        margin-left: 76%;
+    }
   }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     
+    .header-info_wrap {
+        margin-top: 1.2rem;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav {
+        justify-content: space-between;
+    }
+    .menu {
+        display: block;
+    }
+    .video-picture_blob {
+        width: 50%;
+    }
+    .apointment-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .button_bottom {
+        margin-bottom: 2.5rem;
+    }
+    .content_text {
+        margin: 0;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    .gallery-info_item {
+        height: 6rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .item-cicle_green::after {
+        display: block;
+        width: .6rem;
+        height: .6rem;
+        content: '';    
+        border-radius: 1rem;
+        background: #62B58F;
+        position: relative;
+        bottom: 2.3rem;
+        left: 5rem;  
+    }
+    .item-cicle_grey::after {
+        display: block;
+        width: .6rem;
+        height: .6rem;
+        content: '';    
+        border-radius: 1rem;
+        background: #D5D5D5;
+        position: relative;
+        bottom: 2.3rem;
+        left: 5rem;    
+    }
+    .stats-info {
+        padding-top: 23rem;
+    }
+    .info_blob {
+        top: 50%;
+    }
+  }
+
+@media (max-width: 460px) {
+    .header-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-info_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-call_left {
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .info_blob {
+        top: 55%;
+        left: 1rem;
+    }
+    .info_dog {
+        top: 65%;
+    }
+    .info_page  {
+        padding-top: 8rem;
+    }
+    .info-who_title {
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .info-who_cicle {
+        top: -4%;
+    }
+    .wrap-services_block {
+        max-width: 50rem;
+    }
+    .wrap-service_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-page_cards {
+        flex-direction: column;
+    }
+    .info-page_card {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .footer-info_text {
+        padding-left: 2rem;
+        text-align: center;
+    }
+    .img-stats_dog {
+        width: 100%;
+    }
   }
 

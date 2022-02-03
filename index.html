@@ -16,25 +16,57 @@
                 <div class="header-info_logo">
                     <img src="image/logo.png" alt="logo" class="info_logo">
                 </div>
-                <div class="header-info_time info-hours_left">
-                    <img src="icon/time.svg" alt="icon" class="header-info_icon">
-                    <div class="header-info_block">
-                        <span class="header-info_text">BOARDING HOUSE</span>
-                        <span class="header-info_text">Mon - Sat: 7:00 am - 6:00 pm</span>
+                <div class="header-info_wrap">
+                    <div class="header-info_time info-hours_left">
+                        <img src="icon/time.svg" alt="icon" class="header-info_icon">
+                        <div class="header-info_block">
+                            <span class="header-info_text">BOARDING HOUSE</span>
+                            <span class="header-info_text">Mon - Sat: 7:00 am - 6:00 pm</span>
+                        </div>
                     </div>
-                </div>
-                <div class="header-info_time info-call_left">
-                    <img src="icon/phone.svg" alt="icon" class="header-info_icon icon_phone">
-                    <div class="header-info_block">
-                        <span class="header-info_text">CALL US</span>
-                        <span class="header-info_text">(555) Pup-Cares</span>
+                    <div class="header-info_time info-call_left">
+                        <img src="icon/phone.svg" alt="icon" class="header-info_icon icon_phone">
+                        <div class="header-info_block">
+                            <span class="header-info_text">CALL US</span>
+                            <span class="header-info_text">(555) Pup-Cares</span>
+                        </div>
                     </div>
-                </div>
-                <div class="button_appointment">
-                    <button class="button button_nav btn btn-white btn-animate">MAKE AN APPOINTMENT</button>
+                    <div class="button_appointment">
+                        <button class="button button_nav btn btn-white btn-animate">MAKE AN APPOINTMENT</button>
+                    </div>
                 </div>
             </div>
             <nav class="nav">
+                <input id="menu" type="checkbox" class="menu_checkbox">
+                <label for="menu" class="menu"></label>
+                <div class="nav-menu_burger">
+                    <ul class="burger-menu_list"> 
+                    <li class="burger-menu_item"> <a href="#">Services</a> 
+                        <div class="burger-icon_expand burger-icon-servise">
+                            <img src="./icon/expand.svg" alt="icon" class="burger-icon-servise_expand">
+                        </div>
+                        <ul class="burger-menu_downlist burger-downlist_servise">
+                            <li class="burger-menu_item"><a href="#">Services1</a></li>
+                            <li class="burger-menu_item"><a href="#">Services2</a></li>
+                            <li class="burger-menu_item"><a href="#">Services3</a></li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu_item"><a href="#">Specials</a></li>
+                    <li class="burger-menu_item"><a href="#">Facilities</a></li>
+                    <li class="burger-menu_item"><a href="#">Reviews</a></li>
+                    <li class="burger-menu_item"><a href="#">Shop</a>
+                        <div class="burger-icon_expand burger-icon-shop">
+                            <img src="./icon/expand.svg" alt="icon" class="burger-icon-servise_expand">
+                        </div>
+                        <ul class="burger-menu_downlist burger-downlist_shop">
+                            <li class="burger-menu_item"><a href="#">Shop 1</a></li>
+                            <li class="burger-menu_item"><a href="#">Shop 2</a></li>
+                            <li class="burger-menu_item"><a href="#">Shop 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu_item"><a href="#">About</a></li>
+                    </ul>
+                </div>
                 <div class="nav-menu">
                     <ul class="nav-menu_list"> 
                     <li class="nav-menu_item"> <a href="#">Services</a> 
@@ -98,12 +130,8 @@
                                 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
                             </p>
                         </div>
-                        <div class="info-who_blob">
-                            <img src="./image//blob.png" alt="style blob" class="info_blob">
-                        </div>
-                        <div class="info-who_dog">
-                            <img src="./image/dog.jpg" alt="photo dog" class="info_dog">
-                        </div>
+                        <img src="./image//blob.png" alt="style blob" class="info_blob">
+                        <img src="./image/dog.jpg" alt="photo dog" class="info_dog">                        
                     </div>     
                 </div>
                 <div class="info-promise">
@@ -222,9 +250,9 @@
                 </div>
             </div>
             <div class="wrap-apointment">
-                <div class="apointment-img">
-                    <img src="./image/apointment-cicle.png" alt="cicle" class="apointment-img-cicle">
-                </div>
+                <img src="./image/apointment-cicle.png" alt="cicle" class="apointment-img-cicle">
+                <!-- <div class="apointment-img">
+                </div> -->
                 <div class="apointment-content">
                     <div class="content_form">
                         <h3 class="content-form_title">Make an appointment</h3>
@@ -240,7 +268,7 @@
                             </select>
                             <textarea name="comment" cols="40" rows="3" class="textarea" required>Tell us about your puppers include his/her name</textarea>
                             <div class="button_appointment">
-                                <button class="button button_form btn btn-white btn-animate">MAKE AN APPOINTMENT</button>
+                                <button class="button button_form btn btn-white btn-animate button_bottom">MAKE AN APPOINTMENT</button>
                             </div>                            
                         </form>
                     </div>
